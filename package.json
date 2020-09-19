@@ -2,7 +2,7 @@
   "name": "laratalk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/laratalk-theme/",
+  "homepage": "https://febrihidayan.github.io/laratalk-theme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
