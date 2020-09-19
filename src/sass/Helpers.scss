@@ -1,0 +1,65 @@
+.is-flex {
+    display: flex !important;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.is-34x34 {
+    height: 34px;
+    width: 34px;
+}
+
+.is-48x48 {
+    height: 48px;
+    width: 48px;
+}
+
+
+.is-rounded {
+    border-radius: 50%;
+}
+
+.is-cursor {
+    cursor: pointer;
+}
+
+.has-shadow {
+    box-shadow: 0 2px 4px #0f223a1f;
+}
+
+.has-background-white {
+    background-color: $background-white;
+}
+
+.has-text-dark {
+    color: $dark;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.ml {
+    margin-left: .5rem;
+}
+
+@media screen and (max-width: 768px) { 
+    .is-hidden-mobile {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1023px) { 
+    .is-hidden-desktop-only {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .is-hidden-desktop {
+        display: none !important;
+    }
+}

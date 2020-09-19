@@ -1,0 +1,16 @@
+.sidebar {
+    flex-direction: column;
+    height: 100vh;
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
+.sidebar-header {
+    padding: 1rem;
+}
+
+.sidebar-content {
+    overflow-y: scroll;
+}

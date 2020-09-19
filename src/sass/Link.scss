@@ -1,0 +1,15 @@
+.link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    padding: .5rem .75rem;
+    font-size: 1.75rem;
+    height: 59px;
+    margin: 0 auto;
+    justify-content: center;
+    &.is-active {
+        fill: $gray;
+        background-color: #e5e5e5;
+    }
+}

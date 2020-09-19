@@ -1,0 +1,179 @@
+/*! laratalk | MIT License | github.com/febrihidayan/laratalk */
+
+@import './Variable.scss';
+@import './Minireset.scss';
+@import './Helpers.scss';
+@import './Chats.scss';
+@import './Link.scss';
+@import './Media.scss';
+@import './Menu.scss';
+@import './Profile.scss';
+@import './Scroll.scss';
+@import './Sidebar.scss';
+
+.layout {
+    flex-direction: column;
+    height: 100vh;
+    
+    &.dark-mode {
+        
+        .menu {
+            background-color: $dark-menu-background;
+        }
+        
+        .sidebar {
+            background-color: $dark-sidebar-background;
+        }
+        
+        .chats {
+            background-color: $dark-chats-background;
+
+            .chat-footer {
+                border-top: 1px solid #606577;
+            }
+        }
+
+        .chat-profile {
+            background-color: $dark-profile-background;
+            border-left: 1px solid #393e59;
+        }
+
+        .has-shadow {
+            box-shadow: 0 2px 4px $dark-shadow-color;
+        }
+
+        .title {
+            color: $dark-text-color;
+        }
+
+        .has-text-dark {
+            color: $dark-text-color;
+        }
+        
+        .control .svg-icon {
+            fill: $gray;
+        }
+
+        .svg-icon {
+            fill: $dark-text-color;
+        }
+        
+        .is-active {
+            .has-text-dark {
+                color: $black;
+            }
+            .svg-icon {
+                fill: $dark-text-color;
+            }
+            &.link {
+                background-color: #3a3f5b !important;
+            }
+        }
+    }
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.control {
+    box-sizing: border-box;
+    clear: both;
+    font-size: 1rem;
+    position: relative;
+    text-align: inherit;
+    .input {
+        border: 1px solid transparent;
+        box-shadow: none;
+        display: inline-flex;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-bottom: calc(.5em - 1px);
+        padding-left: calc(.75em - 1px);
+        padding-right: calc(.75em - 1px);
+        padding-top: calc(.5em - 1px);
+        position: relative;
+        vertical-align: top;
+        background-color: #fff;
+        border-color: #dbdbdb;
+        color: #363636;
+        width: 100%;
+        border-radius: 290486px;
+        outline: none;
+    }
+
+    .icon {
+        right: 0;
+        height: 2.5em;
+        pointer-events: none;
+        position: absolute;
+        width: 2.5em;
+        z-index: 4;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        fill: $gray;
+    }
+}
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) {
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        position: fixed;
+        bottom: 0;
+        height: 60px;
+        min-width: 100%;
+        min-height: auto;
+        display: block !important;
+        border-top: 1px solid #f0eff5;
+    }
+
+    .chats {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        transform: translateX(100%);
+        z-index: 99;
+        &.is-active {
+            visibility: inherit;
+            transform: translateX(0%);
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .layout {
+        flex-direction: row;
+    }
+
+    .menu {
+        flex-direction: column !important;
+    }
+
+    .menu-content {
+        display: block;
+    }
+
+    .sidebar {
+        min-width: 370px;
+        max-width: 370px;
+    }
+}

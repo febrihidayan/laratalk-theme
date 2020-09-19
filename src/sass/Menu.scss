@@ -1,0 +1,12 @@
+.menu {
+    min-width: 75px;
+    max-width: 75px;
+    height: 100vh;
+    z-index: 9;
+    background-color: $background-white;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+}
