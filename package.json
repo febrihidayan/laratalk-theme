@@ -1,5 +1,10 @@
 {
-  "name": "laratalk",
+  "name": "laratalk-theme",
+  "author": {
+    "name": "Febri Hidayan",
+    "email": "febrihidayan20@gmail.com",
+    "url": "https://febrihidayan.github.io"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
